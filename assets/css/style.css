@@ -3,6 +3,7 @@
 html {
     font-family: 'Raleway', sans-serif;
     scroll-behavior: smooth;
+    background-color: #FFFDE8;
 }
 
 .you-bg-blue {
@@ -29,6 +30,10 @@ i {
     vertical-align: middle;
 }
 
+p{
+    font-size: 1.15rem;
+}
+
 /*Index*/
 
 .banner-img {
@@ -38,11 +43,15 @@ i {
 .card {
     cursor: pointer;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    text-align: center
+    text-align: center;
+}
+
+.img-card{
+    background-color: transparent;
+    mix-blend-mode: multiply;
 }
 
 .card>img {
-    border-radius: 10px;
     opacity: 1;
     display: block;
     width: 100%;
@@ -122,6 +131,17 @@ i {
     }
 }
 
-#title{
-    
+.intro{
+    text-align: center;
+}
+
+.modal{
+    background-color: transparent;
+    box-shadow: none;
+    outline: none;
+
+}
+
+#promoVideo{
+    vertical-align: center;
 }
