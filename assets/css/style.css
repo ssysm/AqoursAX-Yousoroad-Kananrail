@@ -2,7 +2,6 @@
 
 html {
     font-family: 'Raleway', sans-serif;
-    scroll-behavior: smooth;
     background-color: #FFFDE8;
 }
 
@@ -30,7 +29,7 @@ i {
     vertical-align: middle;
 }
 
-p{
+p {
     font-size: 1.15rem;
 }
 
@@ -46,7 +45,7 @@ p{
     text-align: center;
 }
 
-.img-card{
+.img-card {
     background-color: transparent;
     mix-blend-mode: multiply;
 }
@@ -117,7 +116,7 @@ p{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.back-to-top:hover{
+.back-to-top:hover {
     box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2), 0 24px 80px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -126,22 +125,17 @@ p{
 }
 
 @media only screen and (min-width: 992px) {
-    #navbar-brand{
+    #navbar-brand {
         padding-left: 20px
     }
 }
 
-.intro{
+.intro {
     text-align: center;
 }
 
-.modal{
+.modal {
     background-color: transparent;
     box-shadow: none;
     outline: none;
-
-}
-
-#promoVideo{
-    vertical-align: center;
 }

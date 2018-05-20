@@ -20,14 +20,14 @@
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@AX_YousoRail" />
     <meta name="twitter:title" content="Aqours AX &dash; Yousorail Go!" />
-    <meta name="twitter:description" content="Welcome to the official website for organizing the Yousoroad & Kananrail for the Anime Expo 2018 Aqours live ~Beyond the Pacific~!"
-    />
+    <meta name="twitter:description" content="Welcome to the official website for organizing the Yousoroad & Kananrail for the Anime Expo 2018 Aqours live ~Beyond the Pacific~!"/>
     <meta name="twitter:image" content="http://yousoroad.moe/assets/icons/android-chrome-256x256.png">
     <meta name="robots" content="index, follow">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="msapplication-starturl" content="/">
     <meta name="theme-color" content="#409cc3">
+    <link rel="manifest" href="/manifest.json">
     <title>Aqours AX &dash; Yousorail Go!</title>
     <!--Style-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
@@ -42,6 +42,18 @@
 </head>
 
 <body class="main" id="index">
+    <!--[if IE]>
+    <div class="ie">
+        <div class="container">
+            <h1>
+                You are using IE...
+            </h1>
+            <a href="https://browsehappy.com/?locale=en" target="_blank">
+                <p>You can click here and download one of those browsers and try again.</p>
+            </a>
+        </div>
+    </div>
+    <![endif]-->
     <!--Navbar-->
     <div class="content">
         <nav class="you-bg-blue">
@@ -222,34 +234,26 @@
         </div>
         <div class="footer-copyright">
             <div class="container">
-                © 2018 Yousoroad &times; Kananrail Go! Aqours Anime Expo
-                <!-- <a class="grey-text text-lighten-4 right" href="#">Join Us!</a> -->
+                &copy; 2018 Yousoroad &times; Kananrail Go! Aqours Anime Expo
+                <a class="grey-text text-lighten-4 right" href="https://github.com/ssysm">Created by @ssysm</a>
             </div>
         </div>
     </footer>
     <!--Video Modal-->
     <div id="promoVideo" class="modal">
+        <video class="responsive-video" controls controlsList="nodownload" oncontextmenu="return false" id="promoVideoElm">
+            <source src="./assets/video/yousorail_pv_final.mp4" type="video/mp4">
+        </video>
     </div>
 </body>
 <script src="./assets/js/countdown-timer.js"></script>
 <script src="./assets/js/back2top.js"></script>
-<script src="./assets/js/modal-controller.js"></script>
+<script src="./assets/js/video-controller.js"></script>
 <script src="./assets/js/init.js"></script>
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        var sidenavElems = document.querySelectorAll('.sidenav');
-        var sidenavInstances = M.Sidenav.init(sidenavElems);
-        var modalElems = document.querySelectorAll('.modal');
-        var modalInstances = M.Modal.init(modalElems, {
-            onCloseStart: () => {
-                removePromoVideo()
-            },
-            onOpenEnd: () => {
-                showPromoVideo();
-            }
-        });
-        init(modalInstances);
-    });
-</script>
 
 </html>
+<!--
+    This page is created by @ssysm(aka. NA CryptoCurrency Minging Group/美东矿业)
+    You can find me on GitHub at https://github.com/ssysm
+                       Discord at ssysm#2219 
+-->
