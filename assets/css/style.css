@@ -138,4 +138,11 @@ p {
     background-color: transparent;
     box-shadow: none;
     outline: none;
+    max-height: 75vh;
+}
+
+
+#demoVideo{
+    align-items: center;
+    display: flex;
 }

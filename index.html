@@ -9,7 +9,7 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <!--SEO-->
     <meta name="description" content="Welcome to the official website for organizing the Yousoroad & Kananrail for the Anime Expo 2018 Aqours live ~Beyond the Pacific~!">
-    <meta name="keywords" content="Aqours,Love Live!,Love Live!Sunshine!,Yousoroad,Kananrail,Anime Expo,Anisong World Matsuri">
+    <meta name="keywords" content="Aqours,Love Live!,Love Live!Sunshine!,Yousoroad,Kananrail,Anime Expo,Anisong World Matsuri,aqours beyond the pacific">
     <!--Facebook-->
     <meta property="og:title" content="Aqours AX &dash; Yousorail Go!">
     <meta property="og:type" content="website">
@@ -20,7 +20,8 @@
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@AX_YousoRail" />
     <meta name="twitter:title" content="Aqours AX &dash; Yousorail Go!" />
-    <meta name="twitter:description" content="Welcome to the official website for organizing the Yousoroad & Kananrail for the Anime Expo 2018 Aqours live ~Beyond the Pacific~!"/>
+    <meta name="twitter:description" content="Welcome to the official website for organizing the Yousoroad & Kananrail for the Anime Expo 2018 Aqours live ~Beyond the Pacific~!"
+    />
     <meta name="twitter:image" content="http://yousoroad.moe/assets/icons/android-chrome-256x256.png">
     <meta name="robots" content="index, follow">
     <meta name="mobile-web-app-capable" content="yes">
@@ -31,6 +32,7 @@
     <title>Aqours AX &dash; Yousorail Go!</title>
     <!--Style-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.3.12/plyr.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <!--Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -149,8 +151,9 @@
                         <br>
                         <b>Orchestra</b>: 301-328
                         <br>
-                        <b>Loge</b>: 201-213, 301-321, 401-413</p>
+                        <b>Loge</b>: 201-213, 301-321, 401-413
                     </p>
+                    
                 </div>
                 <div class="col l5 s12">
                     <div class="video-container card">
@@ -178,9 +181,21 @@
                         <br>
                         <b>PIT</b>: 301-305, 317-322, 101-105, 501-505
                         <br>
-                        <b>Orchestra</b>: 201-228 and 401-428
+                        <b>Orchestra</b>: 201-228, 401-428
                         <br>
-                        <b>Loge</b>: 117-212, 412-517</p>
+                        <b>Loge</b>: 101-212, 412-517
+                    </p>
+                </div>
+            </div>
+            <!--Video-->
+            <div class="row card">
+                <div class="col l4 s12">
+                    <p class="flow-text" style="font-size:2.5rem;">Demonstration video</p>
+                </div>
+                <div class="col l8 s12">
+                    <video id="yousorailPlayer" class="video responsive-video" playsinline controls>
+                        <source src="./assets/video/Yousorail_60s.mp4" type="video/mp4">
+                    </video>
                 </div>
             </div>
             <div class="row" id="about">
@@ -195,6 +210,7 @@
             </div>
         </div>
     </div>
+    <!--Footer-->
     <footer class="page-footer you-bg-blue">
         <div class="container">
             <div class="row">
@@ -230,26 +246,24 @@
             <a href="#index" class="back-to-top" style="display: none;">
                 <i class="material-icons">arrow_upward</i>
             </a>
-
         </div>
         <div class="footer-copyright">
             <div class="container">
                 &copy; 2018 Yousoroad &times; Kananrail Go! Aqours Anime Expo
-                <a class="grey-text text-lighten-4 right" href="https://github.com/ssysm">Created by @ssysm</a>
             </div>
         </div>
     </footer>
-    <!--Video Modal-->
-    <div id="promoVideo" class="modal">
-        <video class="responsive-video" controls controlsList="nodownload" oncontextmenu="return false" id="promoVideoElm">
+    <!--Modal-->
+    <div id="promoVideo" class="modal video-modal">
+        <video id="promoPlayer" class="video" playsinline controls>
             <source src="./assets/video/yousorail_pv_final.mp4" type="video/mp4">
         </video>
     </div>
 </body>
+<script src="https://cdn.plyr.io/3.3.12/plyr.js"></script>
 <script src="./assets/js/countdown-timer.js"></script>
 <script src="./assets/js/back2top.js"></script>
-<script src="./assets/js/video-controller.js"></script>
-<script src="./assets/js/init.js"></script>
+<script src="./assets/js/script.js"></script>
 
 </html>
 <!--
