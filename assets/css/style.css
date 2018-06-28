@@ -140,9 +140,3 @@ p {
     outline: none;
     max-height: 75vh;
 }
-
-
-#demoVideo{
-    align-items: center;
-    display: flex;
-}
