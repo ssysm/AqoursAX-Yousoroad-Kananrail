@@ -1,14 +1,14 @@
 {
     "manifest_version": 1,
     "version": "0.0.1",
-    "short_name": "Aqours AX - Yousorail Go!",
-    "name": "Aqours AX - Yousorail Go!",
+    "short_name": "Yousorail Go!",
+    "name": "Yousorail Go!",
     "start_url": "/",
     "theme_color": "#409cc3",
     "background_color": "#ffffff",
     "display": "standalone",
     "orientation": "portrait",
-    "description": "Welcome to the official website for organizing the Yousoroad & Kananrail for the Anime Expo 2018 Aqours live ~Beyond the Pacific~!",
+    "description": "Welcome to the official website dedicated to organizing Yousoroad & Kananrail for future North America Aqours World Love Lives!",
     "icons": [
         {
             "src": "/assets/icons/android-chrome-256x256.png",
